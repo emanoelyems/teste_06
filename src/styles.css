@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ecf2f9;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*
+CABEÇALHO
+*/
+header {
+  height: 20vh;
+  text-align: center;
+  background-color: #538cc6;
+}
+header h1 {
+  vertical-align: middle;
+  color: #ecf2f9;
+}
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+  text-align: center;
+  background-color: #336699;
+  margin-bottom: 30px;
+  font-size: 1.6em;
+}
+nav a {
+  color: #ecf2f9;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+nav li {
+  list-style: none;
+  display: inline-flex;
+  margin: 10px 20px 10px 20px;
+}
+nav a:hover {
+  color: #9fbfdf;
+  text-shadow: 1px 2px 3px #19334d;
+}
+
+/*
+MAIN
+*/
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*
+PÁGINA INICIAL
+*/
+
+#home {
+  text-align: center;
+  margin-bottom: 6em;
+  column-count: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*
+SLIDES
+*/
+
+/*
+SOBRE
+*/
+
+#sobre {
+  background-color: #ecf2f9;
+  max-width: 600px;
+  margin: 0 auto;
+  column-count: 1;
+  margin-bottom: 6em;
+  color: #19334d;
+}
+#sobre img {
+  max-width: 100%;
+  display: block;
+}
+.imgC {
+  background-color: #f4f9ff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  break-inside: avoid-column;
+  text-align: center;
+}
+.imgC p {
+  padding: 10px;
+  text-indent: 8px;
+  max-width: 600px;
+}
+/*
+CONTATOS
+*/
+
+#contato {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#contato p {
+  display: inline;
+  padding: 2em;
+  color: #19334d;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+#mapa {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 30px;
+}
+
+/*
+RODAPÉ
+*/
+
+footer {
+  height: 10vh;
+  background-color: #336699;
+  text-align: center;
+}
+footer h2 {
+  vertical-align: middle;
+  color: #ecf2f9;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  /*
+   NAVEGAÇÃO
+   */
+  nav {
+    font-size: 1.2em;
+  }
+  nav li a {
+    display: inline-flex;
+    text-align: center;
+    padding: 0px;
+  }
+
+  /*
+  MAIN
+  */
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /*
+  PÁGINA INICIAL
+  */
+  #home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*
+  SOBRE
+  */
+
+  /*
+CONTATO
+*/
+
+  #contato {
+    display: flex;
+    flex-direction: column;
+  }
+  #contato p {
+    margin: 10px;
+    padding: 0px;
+  }
+
+  /*
+  RODAPÉ
+  */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer h2 {
+    font-size: 1.1em;
+  }
+}
